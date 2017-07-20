@@ -65,6 +65,7 @@ img {
   bottom: 20px;
   text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
   font-family: "Dancing Script", serif;
+  flex-basis: 100%;
 }
 
 #main-navigation {
@@ -104,7 +105,8 @@ aside {
   background-color: #eee;
   box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+
   /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -113,6 +115,7 @@ flex-direction: column;
 }
 
 aside h3 {
+  flex-basis: 200px;
   text-align: center;
   margin: 0 0 10px 0;
   padding: 0 0 10px 0;
@@ -123,6 +126,7 @@ aside img {
   border-radius: 50%;
   margin-bottom: 30px;
   border: 2px solid white;
+
 }
 
 article {
