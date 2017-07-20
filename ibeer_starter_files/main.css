@@ -72,6 +72,7 @@ img {
 #main-navigation {
   background: #444;
   display: flex;
+  justify-content: space-around;
 }
 
 #main-navigation a {
@@ -80,26 +81,18 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 20px;
-  border: 1px solid red;
-  /*
-        TODO:
-        - Flexbox - Create general spacing between nav links
-    */
 }
 
 #main-navigation #logo {
   margin-right: 400px;
-  /*
-        TODO:
-        - Flexbox - The logo needs to take up more space
-        that the other links
-    */
 }
 
 main {
   padding: 20px;
   background-color: #444;
   box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
   /*
         TODO:
         - Flexbox: Set the starting width of this element
