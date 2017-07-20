@@ -42,7 +42,7 @@ justify-content: center;
 }
 
 #site-header {
-  width: 90%;
+width: 950px;
 }
 
 #site-header div {
@@ -95,9 +95,9 @@ main {
   box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
   position: relative;
-  top: -75px;
+bottom: 40px;
+  width: 600px;
 }
 
 aside {
@@ -105,23 +105,14 @@ aside {
   background-color: #eee;
   box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
   display: flex;
-  flex-basis: 10%;
-  flex-wrap: wrap;
-  flex-direction: row;
-align-self: flex-end;
+  flex-direction: column;
 align-items: flex-start;
 position: relative;
-top: -75px;
-
-  /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+bottom: 40px;
+width: 200px;
 }
 
 aside h3 {
-  flex-basis: 200px;
   text-align: center;
   margin: 0 0 10px 0;
   padding: 0 0 10px 0;
@@ -163,6 +154,7 @@ article time {
 article img {
   float: right;
   height: 200px;
+  margin: 0px 0px 0px 20px;
 }
 
 article footer p {
