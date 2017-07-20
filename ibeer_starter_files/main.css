@@ -36,9 +36,13 @@ img {
 
 .wrapper {
   width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
 }
 
 #site-header {
+  width: 90%;
 }
 
 #site-header div {
@@ -65,7 +69,6 @@ img {
   bottom: 20px;
   text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
   font-family: "Dancing Script", serif;
-  flex-basis: 100%;
 }
 
 #main-navigation {
@@ -92,12 +95,9 @@ main {
   box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  margin: -75px 50px 0 50px;
-  /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+  flex-basis: 50%;
+  position: relative;
+  top: -75px;
 }
 
 aside {
@@ -105,7 +105,13 @@ aside {
   background-color: #eee;
   box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
   display: flex;
-  flex-direction: column;
+  flex-basis: 10%;
+  flex-wrap: wrap;
+  flex-direction: row;
+align-self: flex-end;
+align-items: flex-start;
+position: relative;
+top: -75px;
 
   /*
         TODO:
@@ -160,11 +166,13 @@ article img {
 }
 
 article footer p {
-  /*
-        TODO:
-        - Style the article footer
-        HINT: Look to the article header;
-    */
+
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    color: #666;
+    border-top: 1px solid #ccc;
 }
 
 #site-footer {
